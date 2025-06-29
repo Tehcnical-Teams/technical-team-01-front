@@ -10,9 +10,9 @@
     }
 
     body {
-      font-family: sans-serif;
-      background: #111;
-      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000; /* خلفية سوداء */
+      color: #00f0ff; /* لون نص قريب من الأزرق النيون */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -21,27 +21,38 @@
     }
 
     form {
-      background: #222;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px #0f0;
+      background-color: #0a0a0a;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff33;
       width: 100%;
-      max-width: 400px;
+      max-width: 420px;
+      border: 2px solid #00f0ff55;
     }
 
     h2 {
       text-align: center;
-      color: #0f0;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff88;
       margin-top: 0;
+      font-weight: bold;
     }
 
     input, textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
-      border: none;
-      border-radius: 4px;
+      border: 1px solid #00f0ff33;
+      border-radius: 5px;
       font-size: 14px;
+      background-color: #111;
+      color: #00f0ff;
+      outline: none;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #00f0ff77;
     }
 
     textarea {
@@ -51,18 +62,21 @@
 
     button {
       width: 100%;
-      padding: 10px;
-      background: #0f0;
+      padding: 12px;
+      background: #00f0ff;
       color: #000;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       font-weight: bold;
       cursor: pointer;
       font-size: 16px;
+      box-shadow: 0 0 15px #00f0ffaa;
+      transition: background 0.3s, box-shadow 0.3s;
     }
 
     button:hover {
-      background: #0c0;
+      background: #00cce0;
+      box-shadow: 0 0 25px #00f0ff;
     }
   </style>
 </head>
